@@ -233,6 +233,8 @@
   align-self: center;
 }
 
+
+
 .image_page_link_div {
   align-self: center;
   margin-top: 10px;
@@ -701,4 +703,89 @@
   font-weight: 400;
   font-style: normal;
   font-display: auto;
+}
+
+/* Warning Sign Kits page */
+
+.warning_sign_images, .warning_sign_description {
+  width: 48%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.warning_sign_images img {
+  margin-bottom: 15px;
+}
+
+.warning_sign_description {
+  vertical-align: top;
+  padding: 0 10px 0 5px;
+}
+
+.warning_sign_description h2 {
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+
+.warning_sign_description h3 {
+  font-size: 1.4rem;
+}
+
+.warning_sign_description ul {
+  width: 100%;
+}
+
+.warning_sign_description li {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.warning_sign_description p {
+  font-size: 1rem;
+  display: inline-block;
+  color: white;
+  background-color: #7e88c5;
+  box-sizing: content-box;
+  padding: 8px;
+  border-radius: 30px;
+}
+
+/* 
+ * On smaller screens show the description first,
+ * then the images.
+ */
+@media screen and (max-width: 479px) {
+
+  .warning_sign_images, .warning_sign_description {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .warning_sign_description h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+  
+  .warning_sign_description h3 {
+    font-size: 1.2rem;
+  }
+  
+  .warning_sign_description li {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .warning_sign_images img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+  .warning_sign_description div.kit_price {
+    text-align: center;
+  }
+
 }
